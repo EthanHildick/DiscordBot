@@ -1,6 +1,6 @@
-//MzY0MzUxMDQ5NDYyNDQ4MTI4.DLOf_A.oX4_BySlmUGqKg6Lq9YpLmAGYow
+
 const Discord = require('discord.js');
-const token = "MzY0MzUxMDQ5NDYyNDQ4MTI4.DLOf_A.oX4_BySlmUGqKg6Lq9YpLmAGYow";
+const token = "fuck you";
 const bot = new Discord.Client();
 const ms = require("ms");
 console.log("on");
