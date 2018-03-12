@@ -1,6 +1,6 @@
 
 const Discord = require('discord.js');
-const token = "fuck you";
+const token = "[input token]";
 const bot = new Discord.Client();
 const ms = require("ms");
 console.log("on");
@@ -139,7 +139,7 @@ bot.on("message", (message) => {
     let role = message.guild.roles.find("name", "Muted");
     if(!role) return message.channel.reply("you don't have a role by the name of 'Muted'");
     let member = message.mentions.members.first();
-    if(!member) return message.reply("you didn't mention anyone dipshit");
+    if(!member) return message.reply("You didn't mention anyone.");
     
     member.removeRole(role);
     message.channel.send(`${member.user.tag} has been unmuted.`);
@@ -149,7 +149,7 @@ bot.on("message", (message) => {
     let role = message.guild.roles.find("name", "Sinner");
     if(!role) return message.channel.reply("you don't have a role by the name of 'Sinner'");
     let member = message.mentions.members.first();
-    if(!member) return message.reply("you didn't mention anyone dipshit");
+    if(!member) return message.reply("You didn't mention anyone.");
     
     member.addRole(role);
     message.channel.send(`${member.user.tag} has been sent to hell for ${ms(ms(time), {long: true})}.`);
@@ -163,7 +163,7 @@ bot.on("message", (message) => {
     let role = message.guild.roles.find("name", "Sinner");
     if(!role) return message.channel.reply("you don't have a role by the name of 'Sinner'");
     let member = message.mentions.members.first();
-    if(!member) return message.reply("you didn't mention anyone dipshit");
+    if(!member) return message.reply("You didn't mention anyone.");
     
     member.removeRole(role);
     message.channel.send(`${member.user.tag} has been forgiven.`);
